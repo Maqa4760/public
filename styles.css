@@ -59,6 +59,7 @@ header {
     display: flex;
     justify-content: center;
     padding: 10px 0;
+    flex-direction: column;
 }
 
 .search-bar input {
@@ -75,6 +76,7 @@ header {
     color: #fff;
     border-radius: 0 5px 5px 0;
     cursor: pointer;
+    margin-top: 5px;
 }
 
 main {
