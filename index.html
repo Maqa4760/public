@@ -1,72 +1,13 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>İlan Sitesi</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <div class="top-bar">
-            <div class="language-selector">
-                <img src="https://cdn-icons-png.flaticon.com/512/558/558593.png" alt="Language Icon">
-                <select>
-                    <option value="tr">Türkçe</option>
-                    <option value="az">Azerbaycan</option>
-                    <option value="en">English</option>
-                    <option value="ru">Русский</option>
-                </select>
-            </div>
-            <div class="logo">
-                <h1>Modmaz</h1>
-            </div>
-            <div class="user-options">
-                <img src="https://cdn-icons-png.flaticon.com/512/4903/4903482.png" alt="Watchlist Icon">
-                <button><img src="https://www.flaticon.com/free-icon/add_16206813" alt="Add Icon"> Kayıt</button>
-                <button><img src="https://cdn-icons-png.flaticon.com/512/2321/2321232.png" alt="Login Icon"> Giriş Yap</button>
-            </div>
-        </div>
-        <div class="search-bar">
-            <input type="text" placeholder="Arama...">
-            <button>Ara</button>
-            <button id="category-search">Kategori Ara</button>
-        </div>
-    </header>
-    <main>
-        <aside>
-            <h2>Kategoriler</h2>
-            <button id="category-button">Kategorileri Göster</button>
-            <div id="category-window" class="hidden">
-                <ul>
-                    <li><img src="icons/electronics.svg" alt="Elektronika"> Elektronika</li>
-                    <li><img src="icons/furniture.svg" alt="Mebel"> Mebel</li>
-                    <li><img src="icons/home.svg" alt="Ev və bağ"> Ev və bağ</li>
-                    <li><img src="icons/real-estate.svg" alt="Daşınmaz əmlak"> Daşınmaz əmlak</li>
-                    <li><img src="icons/transport.svg" alt="Nəqliyyat"> Nəqliyyat</li>
-                    <li><img src="icons/sports.svg" alt="İdman və hobbi"> İdman və hobbi</li>
-                    <li><img src="icons/personal.svg" alt="Şəxsi əşyalar"> Şəxsi əşyalar</li>
-                    <li><img src="icons/job.svg" alt="İş"> İş</li>
-                    <li><img src="icons/services.svg" alt="Xidmətlər"> Xidmətlər</li>
-                    <li><img src="icons/pets.svg" alt="Heyvanlar"> Heyvanlar</li>
-                    <li><img src="icons/equipment.svg" alt="Biznes üçün avadanlıq"> Biznes üçün avadanlıq</li>
-                    <li><img src="icons/baby.svg" alt="Uşaq dünyası"> Uşaq dünyası</li>
-                    <li><img src="icons/medical.svg" alt="Tibbi məhsullar"> Tibbi məhsullar</li>
-                </ul>
-            </div>
-        </aside>
-        <section class="vip-ads">
-            <h2>VIP İlanlar</h2>
-        </section>
-        <section class="new-ads">
-            <h2>Yeni İlanlar</h2>
-        </section>
-    </main>
-    <footer>
-        <button class="support-button">
-            <img src="https://cdn-icons-png.flaticon.com/512/1078/1078011.png" alt="Support Icon">
-        </button>
-    </footer>
-    <script src="scripts.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + React + TS</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>
