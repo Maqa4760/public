@@ -24,6 +24,11 @@ header {
     border-radius: 5px;
 }
 
+.language-selector img {
+    width: 24px;
+    height: 24px;
+}
+
 .logo h1 {
     margin: 0;
 }
