@@ -3,22 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>İlan Sitesi</title>
+    <title>İlan Sitesi - Ana Sayfa</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>İlan Sitesi</h1>
-    <div id="ilanlar"></div>
-    <form id="ilanForm">
-        <label for="title">Başlık:</label>
-        <input type="text" id="title" name="title" required>
-        <br>
-        <label for="description">Açıklama:</label>
-        <textarea id="description" name="description" required></textarea>
-        <br>
-        <button type="submit">İlan Ekle</button>
-    </form>
-    
-    <script src="scripts.js"></script>
+    <!-- Üst Menü -->
+    <header>
+        <h1>İlan Sitesi</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Ana Sayfa</a></li>
+                <li><a href="hakkimizda.html">Hakkımızda</a></li>
+                <li><a href="iletisim.html">İletişim</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Arama Çubuğu -->
+    <section id="arama">
+        <h2>Aradığınız ilanları kolayca bulun!</h2>
+        <form>
+            <input type="text" placeholder="Arama yapın..." id="search-box">
+            <button type="submit">Ara</button>
+        </form>
+    </section>
+
+    <!-- Kategoriler -->
+    <section id="kategoriler">
+        <h2>Kategoriler</h2>
+        <div class="kategori">
+            <div>Emlak</div>
+            <div>Araçlar</div>
+            <div>Elektronik</div>
+            <div>Ev ve Bahçe</div>
+        </div>
+    </section>
+
+    <!-- Popüler İlanlar -->
+    <section id="populer-ilanlar">
+        <h2>Popüler İlanlar</h2>
+        <div class="ilan">
+            <h3>İlan Başlığı 1</h3>
+            <p>Açıklama: Bu bir popüler ilan örneğidir.</p>
+        </div>
+        <div class="ilan">
+            <h3>İlan Başlığı 2</h3>
+            <p>Açıklama: Bu bir başka popüler ilan örneğidir.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 İlan Sitesi. Tüm hakları saklıdır.</p>
+    </footer>
 </body>
 </html>
+
