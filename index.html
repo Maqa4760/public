@@ -3,63 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modmax - İlan Sitesi</title>
+    <title>İlan Sitesi</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
-    <!-- Header (Üst Menü) -->
     <header>
-        <div class="header-left">
-            <h1>Modmax</h1>
+        <div class="top-bar">
+            <div class="language-selector">
+                <img src="icons/language.svg" alt="Language Icon">
+                <select>
+                    <option value="tr">Türkçe</option>
+                    <option value="az">Azerbaycan</option>
+                    <option value="en">English</option>
+                    <option value="ru">Русский</option>
+                </select>
+            </div>
+            <div class="logo">
+                <h1>Modmaz</h1>
+            </div>
+            <div class="user-options">
+                <img src="icons/heart.svg" alt="Watchlist Icon">
+                <button>Kayıt</button>
+                <button>Giriş Yap</button>
+            </div>
         </div>
-
-        <div class="auth-buttons">
-            <button id="login-btn">Giriş Yap</button>
-            <button id="signup-btn">Kaydol</button>
-        </div>
-
-        <!-- Dil Seçimi -->
-        <div class="language-selector">
-            <select id="language-dropdown">
-                <option value="en">İngilizce</option>
-                <option value="tr">Türkçe</option>
-            </select>
+        <div class="search-bar">
+            <input type="text" placeholder="Arama...">
+            <button>Ara</button>
         </div>
     </header>
-
-    <!-- Arama Bölümü -->
-    <section id="search-section">
-        <input type="text" id="search-input" placeholder="İlanlarda Ara..." />
-        <button id="search-btn">Ara</button>
-    </section>
-
-    <!-- Kategoriler -->
-    <section id="categories">
-        <h2>Kategoriler</h2>
-        <div class="category-icons">
-            <!-- 100 kategori simgesi buraya eklenecek -->
-            <div class="category"><span class="material-icons">directions_bike</span><p>Bisiklet</p></div>
-            <div class="category"><span class="material-icons">home</span><p>Ev</p></div>
-            <div class="category"><span class="material-icons">spa</span><p>Bahçe</p></div>
-            <div class="category"><span class="material-icons">tv</span><p>Elektronik</p></div>
-            <div class="category"><span class="material-icons">directions_car</span><p>Araçlar</p></div>
-            <!-- 100 kategoriye kadar ikonlar buraya eklenebilir -->
-        </div>
-    </section>
-
-    <!-- VIP İlanlar -->
-    <section id="vip-listings">
-        <h2>VIP İlanlar</h2>
-        <div class="vip-list">
-            <div class="vip-item">VIP İlan 1</div>
-            <div class="vip-item">VIP İlan 2</div>
-            <div class="vip-item">VIP İlan 3</div>
-        </div>
-    </section>
-
+    <main>
+        <aside>
+            <h2>Kategoriler</h2>
+            <button id="category-button">Kategorileri Göster</button>
+            <div id="category-window" class="hidden">
+                <ul>
+                    <li><img src="icons/electronics.svg" alt="Elektronika"> Elektronika</li>
+                    <li><img src="icons/furniture.svg" alt="Mebel"> Mebel</li>
+                    <li><img src="icons/home.svg" alt="Ev və bağ"> Ev və bağ</li>
+                    <li><img src="icons/real-estate.svg" alt="Daşınmaz əmlak"> Daşınmaz əmlak</li>
+                    <li><img src="icons/transport.svg" alt="Nəqliyyat"> Nəqliyyat</li>
+                    <li><img src="icons/sports.svg" alt="İdman və hobbi"> İdman və hobbi</li>
+                    <li><img src="icons/personal.svg" alt="Şəxsi əşyalar"> Şəxsi əşyalar</li>
+                    <li><img src="icons/job.svg" alt="İş"> İş</li>
+                    <li><img src="icons/services.svg" alt="Xidmətlər"> Xidmətlər</li>
+                    <li><img src="icons/pets.svg" alt="Heyvanlar"> Heyvanlar</li>
+                    <li><img src="icons/equipment.svg" alt="Biznes üçün avadanlıq"> Biznes üçün avadanlıq</li>
+                    <li><img src="icons/baby.svg" alt="Uşaq dünyası"> Uşaq dünyası</li>
+                    <li><img src="icons/medical.svg" alt="Tibbi məhsullar"> Tibbi məhsullar</li>
+                </ul>
+            </div>
+        </aside>
+        <section class="vip-ads">
+            <h2>VIP İlanlar</h2>
+        </section>
+        <section class="new-ads">
+            <h2>Yeni İlanlar</h2>
+        </section>
+    </main>
     <footer>
-        <p>&copy; 2024 Modmax. Tüm hakları saklıdır.</p>
+        <button class="support-button">
+            <img src="icons/support.svg" alt="Support Icon">
+            Destek
+        </button>
     </footer>
+    <script src="scripts.js"></script>
 </body>
 </html>
