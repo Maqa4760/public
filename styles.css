@@ -1,4 +1,4 @@
-/* Genel Stil */
+/* Genel Ayarlar */
 body {
     font-family: Arial, sans-serif;
     background-color: white;
@@ -8,7 +8,7 @@ body {
 }
 
 header {
-    background-color: #1E90FF;
+    background-color: #1E90FF;  /* Gökyüzü Mavisi */
     color: white;
     padding: 20px;
     display: flex;
@@ -16,7 +16,7 @@ header {
     align-items: center;
 }
 
-header .logo h1 {
+header .header-left h1 {
     margin: 0;
     font-size: 32px;
 }
@@ -127,7 +127,7 @@ header .language-selector select {
 
 /* Footer */
 footer {
-    background-color: #1E90FF;
+    background-color: #1E90FF;  /* Gökyüzü Mavisi */
     color: white;
     text-align: center;
     padding: 10px;
