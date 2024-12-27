@@ -5,7 +5,7 @@ body {
 }
 
 header {
-    background-color: #663399; /* Purple color */
+    background-color: #663399; /* Mor renk */
     color: #fff;
     padding: 10px 0;
 }
@@ -35,6 +35,8 @@ header {
 
 .user-options img {
     margin-right: 10px;
+    width: 24px;
+    height: 24px;
 }
 
 .user-options button {
@@ -44,6 +46,8 @@ header {
     margin-left: 5px;
     border-radius: 5px;
     cursor: pointer;
+    display: flex;
+    align-items: center;
 }
 
 .search-bar {
@@ -110,6 +114,8 @@ aside button {
 
 #category-window ul li img {
     margin-right: 10px;
+    width: 20px;
+    height: 20px;
 }
 
 .vip-ads,
@@ -142,4 +148,6 @@ footer {
 
 .support-button img {
     margin-right: 5px;
+    width: 24px;
+    height: 24px;
 }
