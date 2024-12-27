@@ -3,116 +3,62 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
-    color: #333;
+    background-color: #f4f4f4;
 }
 
-h1, h2, h3 {
-    text-align: center;
-    margin: 20px 0;
-}
-
-/* Üst Menü */
 header {
     background-color: #333;
     color: white;
-    padding: 10px 0;
     text-align: center;
+    padding: 20px;
 }
 
-header nav ul {
+header h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+nav ul {
     list-style-type: none;
     padding: 0;
     display: flex;
     justify-content: center;
+    margin-top: 20px;
 }
 
-header nav ul li {
-    margin: 0 15px;
+nav ul li {
+    margin: 10px;
 }
 
-header nav ul li a {
+nav ul li a {
     text-decoration: none;
     color: white;
-    font-weight: bold;
-}
-
-header nav ul li a:hover {
-    text-decoration: underline;
-}
-
-/* Arama Çubuğu */
-#arama {
     text-align: center;
-    margin: 20px 0;
+    font-size: 18px;
 }
 
-#arama input[type="text"] {
+nav ul li a .material-icons {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+nav ul li a:hover {
+    background-color: #555;
     padding: 10px;
-    width: 300px;
-    margin-right: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 8px;
 }
 
-#arama button {
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-#arama button:hover {
-    background-color: #0056b3;
-}
-
-/* Kategoriler */
-#kategoriler {
-    margin: 20px;
-    text-align: center;
-}
-
-#kategoriler .kategori {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin-top: 10px;
-}
-
-#kategoriler .kategori div {
+/* Ana Sayfa Stili */
+main {
     padding: 20px;
-    background-color: #f4f4f4;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    cursor: pointer;
 }
 
-#kategoriler .kategori div:hover {
-    background-color: #e0e0e0;
-}
-
-/* Popüler İlanlar */
-#populer-ilanlar {
-    margin: 20px;
-    text-align: center;
-}
-
-#populer-ilanlar .ilan {
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 15px;
-    margin: 10px auto;
-    max-width: 600px;
-    background-color: #fff;
-}
-
-/* Footer */
 footer {
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 10px 0;
-    margin-top: 20px;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
