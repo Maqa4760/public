@@ -5,37 +5,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modmax - İlan Sitesi</title>
     <link rel="stylesheet" href="styles.css">
-    <!-- Google Material Icons for the icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
-    <!-- Ana Menü -->
+    <!-- Header (Üst Menü) -->
     <header>
-        <h1>Modmax İlan Sitesi</h1>
-        <nav>
-            <ul>
-                <li><a href="#" class="kategori">
-                    <span class="material-icons">directions_bike</span><br>Bisiklet
-                </a></li>
-                <li><a href="#" class="kategori">
-                    <span class="material-icons">home</span><br>Ev
-                </a></li>
-                <li><a href="#" class="kategori">
-                    <span class="material-icons">spa</span><br>Bahçe
-                </a></li>
-                <li><a href="#" class="kategori">
-                    <span class="material-icons">tv</span><br>Elektronik
-                </a></li>
-                <li><a href="#" class="kategori">
-                    <span class="material-icons">directions_car</span><br>Araçlar
-                </a></li>
-            </ul>
-        </nav>
+        <div class="logo">
+            <h1>Modmax</h1>
+        </div>
+
+        <!-- Giriş ve Kaydol Butonları -->
+        <div class="auth-buttons">
+            <button id="login-btn">Giriş Yap</button>
+            <button id="signup-btn">Kaydol</button>
+        </div>
+
+        <!-- Dil Seçimi -->
+        <div class="language-selector">
+            <select id="language-dropdown">
+                <option value="en">İngilizce</option>
+                <option value="tr">Türkçe</option>
+            </select>
+        </div>
     </header>
 
-    <main>
-        <!-- İçerik buraya gelecek -->
-    </main>
+    <!-- Arama Bölümü -->
+    <section id="search-section">
+        <input type="text" id="search-input" placeholder="İlanlarda Ara..." />
+        <button id="search-btn">Ara</button>
+    </section>
+
+    <!-- Kategoriler -->
+    <section id="categories">
+        <h2>Kategoriler</h2>
+        <div class="category-icons">
+            <!-- Bu alana en az 50 kategori simgesi yerleştireceğiz -->
+            <div class="category"><span class="material-icons">directions_bike</span><p>Bisiklet</p></div>
+            <div class="category"><span class="material-icons">home</span><p>Ev</p></div>
+            <div class="category"><span class="material-icons">spa</span><p>Bahçe</p></div>
+            <div class="category"><span class="material-icons">tv</span><p>Elektronik</p></div>
+            <div class="category"><span class="material-icons">directions_car</span><p>Araçlar</p></div>
+            <!-- 50 kategori buraya eklenebilir -->
+        </div>
+    </section>
+
+    <!-- VIP İlanlar -->
+    <section id="vip-listings">
+        <h2>VIP İlanlar</h2>
+        <div class="vip-list">
+            <div class="vip-item">VIP İlan 1</div>
+            <div class="vip-item">VIP İlan 2</div>
+            <div class="vip-item">VIP İlan 3</div>
+        </div>
+    </section>
 
     <footer>
         <p>&copy; 2024 Modmax. Tüm hakları saklıdır.</p>
